@@ -6,104 +6,34 @@
   <style>
     body{
       margin:0;
-      font-family:Arial, sans-serif;
-      background:#0d0d0d;
+      background:#111;
       color:white;
+      font-family:sans-serif;
+      text-align:center;
     }
     header{
-      background:#111;
-      padding:15px 20px;
+      padding:15px;
+      background:#000;
       font-size:22px;
       font-weight:bold;
-      border-bottom:2px solid #222;
     }
-    .container{
-      display:flex;
-      flex-wrap:wrap;
-    }
-    .content{
-      flex:3;
-      padding:20px;
-      display:grid;
-      grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
-      gap:15px;
-    }
-    .card{
-      background:#1a1a1a;
-      border-radius:10px;
-      overflow:hidden;
-      transition:0.3s;
-    }
-    .card:hover{
-      transform:scale(1.05);
-    }
-    .thumb{
-      width:100%;
-      height:200px;
-      object-fit:cover;
-    }
-    .card-title{
-      padding:10px;
-      font-size:14px;
-    }
-    .card a{
-      color:white;
-      text-decoration:none;
-    }
-    .sidebar{
-      flex:1;
-      min-width:220px;
-      background:#141414;
-      padding:20px;
-    }
-    .ad{
-      background:#222;
-      padding:15px;
-      text-align:center;
-      margin:15px 0;
-      border-radius:8px;
-    }
-    @media(max-width:768px){
-      .container{flex-direction:column;}
+    video{
+      margin-top:20px;
+      width:90%;
+      max-width:900px;
     }
   </style>
 </head>
 <body>
 
-<header>Bokepina </header>
+<header>🔥 Bokepina</header>
 
-<div class="container">
+<h2>Video Terbaru</h2>
 
-  <div class="content">
-
-    <div class="card">
-      <a href="video1.html">
-        <img src="https://picsum.photos/400/600?1" class="thumb">
-        <div class="card-title">Bokepina</div>
-      </a>
-    </div>
-
-    <div class="card">
-      <a href="video2.html">
-        <img src="https://picsum.photos/400/600?2" class="thumb">
-        <div class="card-title">Bokepina</div>
-      </a>
-    </div>
-
-  </div>
-
-  <div class="sidebar">
-    <h3>🔥 Trending</h3>
-    <p>⭐ Video Terbaru</p>
-    <p>🔥 Paling Banyak Ditonton</p>
-
-    <div class="ad">
-      PASANG SCRIPT IKLAN DISINI
-    </div>
-
-  </div>
-
-</div>
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+  Browser kamu tidak mendukung video.
+</video>
 
 </body>
 </html>
