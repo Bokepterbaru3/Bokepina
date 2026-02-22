@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Asupan Indo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#0d0d0d;
+      color:white;
+    }
+    header{
+      background:#111;
+      padding:15px 20px;
+      font-size:22px;
+      font-weight:bold;
+      border-bottom:2px solid #222;
+    }
+    .container{
+      display:flex;
+      flex-wrap:wrap;
+    }
+    .content{
+      flex:3;
+      padding:20px;
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+      gap:15px;
+    }
+    .card{
+      background:#1a1a1a;
+      border-radius:10px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+    .card:hover{
+      transform:scale(1.05);
+    }
+    .thumb{
+      width:100%;
+      height:200px;
+      object-fit:cover;
+    }
+    .card-title{
+      padding:10px;
+      font-size:14px;
+    }
+    .card a{
+      color:white;
+      text-decoration:none;
+    }
+    .sidebar{
+      flex:1;
+      min-width:220px;
+      background:#141414;
+      padding:20px;
+    }
+    .ad{
+      background:#222;
+      padding:15px;
+      text-align:center;
+      margin:15px 0;
+      border-radius:8px;
+    }
+    @media(max-width:768px){
+      .container{flex-direction:column;}
+    }
+  </style>
+</head>
+<body>
+
+<header>🔥 Asupan Indo</header>
+
+<div class="container">
+
+  <div class="content">
+
+    <div class="card">
+      <a href="video1.html">
+        <img src="https://picsum.photos/400/600?1" class="thumb">
+        <div class="card-title">Video Asupan 1</div>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="video2.html">
+        <img src="https://picsum.photos/400/600?2" class="thumb">
+        <div class="card-title">Video Asupan 2</div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="sidebar">
+    <h3>🔥 Trending</h3>
+    <p>⭐ Video Terbaru</p>
+    <p>🔥 Paling Banyak Ditonton</p>
+
+    <div class="ad">
+      PASANG SCRIPT IKLAN DISINI
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
